@@ -50,7 +50,7 @@ for payslip in payslips_info.json():
 
     payslip_session = session.post(url=url_payslip, json=payload_request, headers=headers)
     if payslip_session.status_code == 200:
-        filename = payslip['payrollCode']
+        filename = payslip['payrollCode'] + ".pdf"
         with open(filename, "wb") as f:
             for chunk in payslip_session.iter_content(chunk_size=1024):
                 if chunk:
