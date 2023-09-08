@@ -8,7 +8,7 @@ pdf_files = [x for x in pdf_files if ".pdf" in x]
 
 cwd = os.getcwd()
 
-pdf_pass = ""
+pdf_pass = "" # Supply pdf password here to remove password
 for i in pdf_files:
     pdf_path = "{}/{}".format(cwd, i)
     print(pdf_path)
