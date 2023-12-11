@@ -18,3 +18,4 @@ for i in pdf_files:
     print("Password removed!")
 
 #reference: https://medium.com/geekculture/simply-removing-pdf-password-using-python-8966700089c9
+
